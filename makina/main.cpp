@@ -11,12 +11,7 @@ public:
     int viti;
 
     Automjet(string emri, string brand, string modeli, int viti)
-    {
-        emri = emri;
-        brand = brand;
-        modeli = modeli;
-        viti = viti;
-    }
+        : emri(emri), brand(brand), modeli(modeli), viti(viti) {} // Fixed initialization
 
     virtual void PrintInfo();
 };
@@ -127,6 +122,7 @@ int main()
                 Kamion k1(x, y, z, a);
                 k1.PrintInfo();
             }
+            break;
 
         case 4:
             cout << "Duke dal nga programi..." << endl;
