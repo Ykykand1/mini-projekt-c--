@@ -69,7 +69,6 @@ void shfaqMenu()
 int main()
 {
     int zgjedhja = 0;
-    shfaqMenu();
     int i = 1;
     while (i != 4)
     {
