@@ -136,3 +136,7 @@ int main()
 
     return 0;
 }
+
+void Automjet::PrintInfo()
+{
+}
