@@ -11,8 +11,7 @@ public:
     int viti;
 
     Automjet(string emri, string brand, string modeli, int viti)
-        : emri(emri), brand(brand), modeli(modeli), viti(viti) {} // Fixed initialization
-
+        : emri(emri), brand(brand), modeli(modeli), viti(viti) {}
     virtual void PrintInfo();
 };
 
