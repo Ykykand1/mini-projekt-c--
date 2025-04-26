@@ -69,8 +69,8 @@ void shfaqMenu()
 int main()
 {
     int zgjedhja = 0;
-    int i = 1;
-    while (i != 4)
+    bool on = true;
+    while (on)
     {
         shfaqMenu();
         cin >> zgjedhja;
@@ -128,13 +128,12 @@ int main()
 
         case 4:
             cout << "Duke dal nga programi..." << endl;
-            break;
+            return 0;
 
         default:
             cout << "Zgjedhje e gabuar. Provoni serish!!" << endl;
             break;
         }
-        i++;
     }
 
     return 0;
