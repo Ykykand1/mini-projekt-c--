@@ -15,8 +15,7 @@ public:
     Automjet(string emri, string brand, string modeli, int viti)
         : emri(emri), brand(brand), modeli(modeli), viti(viti) {}
 
-    virtual void PrintInfo() = 0; // funksion virtual
-    virtual ~Automjet() {}        // destruktor virtual për të liruar kujtesën
+    virtual void PrintInfo(); // funksion virtual
 };
 
 // Klasa për Makina
