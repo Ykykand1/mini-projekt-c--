@@ -22,10 +22,11 @@ public:
 
     void PrintInfo() override
     {
-        cout << "Makina: " << emri << endl;
-        cout << "Brand-i: " << brand << endl;
-        cout << "Modeli: " << modeli << endl;
-        cout << "Viti: " << viti << endl;
+        cout << "--Makina--: " << emri << endl;
+        cout << "--Brand-i--: " << brand << endl;
+        cout << "--Modeli--: " << modeli << endl;
+        cout << "--Viti--: " << viti << endl;
+        cout<<"\n";
     }
 };
 
@@ -36,10 +37,11 @@ public:
 
     void PrintInfo() override
     {
-        cout << "Motorri: " << emri << endl;
-        cout << "Brand-i: " << brand << endl;
-        cout << "Modeli: " << modeli << endl;
-        cout << "Viti: " << viti << endl;
+        cout << "--Motorri--: " << emri << endl;
+        cout << "--Brand-i--: " << brand << endl;
+        cout << "--Modeli--: " << modeli << endl;
+        cout << "--Viti--: " << viti << endl;
+        cout<<"\n";
     }
 };
 
@@ -50,19 +52,22 @@ public:
 
     void PrintInfo() override
     {
-        cout << "Kamion: " << emri << endl;
-        cout << "Brand-i: " << brand << endl;
-        cout << "Modeli: " << modeli << endl;
-        cout << "Viti: " << viti << endl;
+        cout << "--Kamion--: " << emri << endl;
+        cout << "--Brand-i--: " << brand << endl;
+        cout << "--Modeli--: " << modeli << endl;
+        cout << "--Viti--: " << viti << endl;
+        cout<<"\n";
     }
 };
 
 void shfaqMenu()
 {
+    cout << "\t---Menuja---"<<endl;
     cout << "\t 1 Shto makine: " << endl;
     cout << "\t 2 Shto motor: " << endl;
     cout << "\t 3 Shto kamion: " << endl;
     cout << "\t 4 Dil: " << endl;
+    cout<<"\n";
     cout << " Zgjidhni: ";
 }
 
@@ -79,13 +84,14 @@ int main()
         switch (zgjedhja)
         {
         case 1:
-            cout << "Jep emrin: " << endl;
+            cout<<"\n";
+            cout << " Jep emrin: " << endl;
             cin >> x;
-            cout << "Jep brand-in: " << endl;
+            cout << " Jep brand-in: " << endl;
             cin >> y;
-            cout << "Jep modelin: " << endl;
+            cout << " Jep modelin: " << endl;
             cin >> z;
-            cout << "Jep vitin e prodhimit: " << endl;
+            cout << " Jep vitin e prodhimit: " << endl;
             cin >> a;
             cout << endl;
             {
@@ -95,13 +101,14 @@ int main()
             break;
 
         case 2:
-            cout << "Jep emrin: " << endl;
+            cout<<"\n";
+            cout << " Jep emrin: " << endl;
             cin >> x;
-            cout << "Jep brand-in: " << endl;
+            cout << " Jep brand-in: " << endl;
             cin >> y;
-            cout << "Jep modelin: " << endl;
+            cout << " Jep modelin: " << endl;
             cin >> z;
-            cout << "Jep vitin e prodhimit: " << endl;
+            cout << " Jep vitin e prodhimit: " << endl;
             cin >> a;
             cout << endl;
             {
@@ -111,13 +118,14 @@ int main()
             break;
 
         case 3:
-            cout << "Jep emrin: " << endl;
+            cout<<"\n";
+            cout << " Jep emrin: " << endl;
             cin >> x;
-            cout << "Jep brand-in: " << endl;
+            cout << " Jep brand-in: " << endl;
             cin >> y;
-            cout << "Jep modelin: " << endl;
+            cout << " Jep modelin: " << endl;
             cin >> z;
-            cout << "Jep vitin e prodhimit: " << endl;
+            cout << " Jep vitin e prodhimit: " << endl;
             cin >> a;
             cout << endl;
             {
@@ -127,11 +135,11 @@ int main()
             break;
 
         case 4:
-            cout << "Duke dal nga programi..." << endl;
+            cout << " Duke dal nga programi..." << endl;
             return 0;
 
         default:
-            cout << "Zgjedhje e gabuar. Provoni serish!!" << endl;
+            cout << " Zgjedhje e gabuar. Provoni serish!!" << endl;
             break;
         }
     }
