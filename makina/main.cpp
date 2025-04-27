@@ -84,7 +84,6 @@ void merrTeDhena(string &emri, string &brand, string &modeli, int &viti)
     getline(cin, modeli);
     cout << "Jep vitin e prodhimit: ";
     cin >> viti;
-    cin.ignore();
 }
 
 // Funksion për të shfaqur të gjithë automjetet e regjistruara
@@ -112,14 +111,6 @@ int main()
     {
         shfaqMenu();
         cin >> zgjedhja;
-        cin.ignore(); // pastron enter-in pas cin
-
-        if (zgjedhja == 5)
-        {
-            cout << "Duke dal nga programi..." << endl;
-            break;
-        }
-
         string emri, brand, modeli;
         int viti;
 
@@ -150,6 +141,13 @@ int main()
         {
             shfaqTeGjithaAutomjetet(automjetet);
             break;
+        }
+
+        case 5:
+        {
+
+            cout << "\tDuke dal nga programi....";
+            return 0;
         }
         default:
             cout << "Zgjedhje e gabuar. Provoni perseri!" << endl;
